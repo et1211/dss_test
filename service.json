@@ -6,7 +6,7 @@
     "longitudinal"
   ],
   "shortdesc": "DSS tutorial service (deformable registration)",
-  "longdesc": "Given a target image and a source image with labels, perform registration and map labels from the source image to the target image",
+  "longdesc": "Perform registration and map labels from source to target image",
   "tags": [
     {
       "name": "Target Image",
@@ -18,6 +18,12 @@
       "name": "Source Image",
       "type": "OverlayImage",
       "hint": "The anatomical image from which you want to warp the segmentation", 
+      "required": true
+    },
+    {
+      "name": "SourceSeg",
+      "type": "OverlayImage",
+      "hint": "The segmentation of the source image",
       "required": true
     }
   ]
